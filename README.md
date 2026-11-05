@@ -28,10 +28,10 @@ Waitress serves the application by default. Use `--dev` only locally. For public
 
 - `src/portfolio/templates/index.html`: copy, experience, project links, and social links.
 - `src/portfolio/static/style.css`: responsive layout, typography, colors.
-- `src/portfolio/static/app.js`: deterministic decorative signal and chart illustrations.
+- `src/portfolio/static/app.js`: deterministic decorative hero signal illustration.
 - `src/portfolio/__init__.py`: application, headers, and CLI.
 
-All content is rendered on the server and usable without JavaScript. JavaScript only draws decorative illustrations. Reduced motion preferences are respected. Model metrics come from the owner-provided August 2026 resume; chart artwork is illustrative.
+All content is rendered on the server and usable without JavaScript. JavaScript only draws the decorative hero illustration. Reduced motion preferences are respected. Model metrics come from the owner-provided August 2026 resume. The NBA card displays the original XGBoost permutation-importance image from the project repository. The audio card is a source-code overview, pending an approved real screenshot.
 
 ## Content provenance
 
@@ -45,3 +45,7 @@ Public information reviewed November 5, 2026:
 - [NSRI collaborator's post naming Jack as a technical research intern](https://www.linkedin.com/posts/allaboutkirkbramwell_this-year-ive-had-the-unique-opportunity-activity-7366916158773489664-xAEy)
 
 The owner-provided August 2026 resume is the source of truth for internship titles, dates, education, contact email, and reported metrics. The original resume is not committed or served. Contact uses the professional email supplied in that resume. Review profile copy and education dates when updating the site.
+
+## Project imagery
+
+`src/portfolio/static/images/nba-feature-importance.png` is the unmodified [XGBoost permutation importance plot](https://github.com/jacklav24/NBA-Player-Points-Predictor/blob/main/player_prediction_app/backend/plots/xgb_perm_importance.png) from the owner’s repository. The card links to the original. Selected work uses no invented data illustrations. Audio Pitch Core currently uses a text overview of its documented architecture; replace it with an actual project screenshot when available.

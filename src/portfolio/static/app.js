@@ -15,16 +15,3 @@ for (let row = 0; row < 32; row++) {
   }
   svgNode(landscape, 'path', {d, fill: 'none', stroke: '#6d805d', 'stroke-width': .85, opacity: .4 + row / 65});
 }
-const waveform = document.querySelector('#waveform');
-for (let i = 0; i < 100; i++) {
-  const x = 26 + i * 4.7;
-  const envelope = Math.sin(i / 100 * Math.PI) ** 1.3;
-  const amplitude = 5 + envelope * (13 + Math.abs(Math.sin(i * .73) * Math.cos(i * .13)) * 60);
-  svgNode(waveform, 'line', {x1: x, x2: x, y1: 91 - amplitude, y2: 91 + amplitude, stroke: 'currentColor', 'stroke-width': 1.6, opacity: .8});
-}
-const scatter = document.querySelector('#scatter');
-for (let i = 0; i < 30; i++) {
-  const x = 40 + i * 15;
-  const y = 139 - i * 3.5 + Math.sin(i * 2.4) * 23;
-  svgNode(scatter, 'circle', {cx: x, cy: y, r: 3, fill: 'currentColor', opacity: .45});
-}
