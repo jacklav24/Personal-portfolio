@@ -31,7 +31,7 @@ Waitress serves the application by default. Use `--dev` only locally. For public
 - `src/portfolio/static/app.js`: deterministic decorative hero signal illustration.
 - `src/portfolio/__init__.py`: application, headers, and CLI.
 
-All content is rendered on the server and usable without JavaScript. JavaScript only draws the decorative hero illustration. Reduced motion preferences are respected. Model metrics come from the owner-provided August 2026 resume. The NBA card displays the original XGBoost permutation-importance image from the project repository. The audio card is a source-code overview, pending an approved real screenshot.
+All content is rendered on the server and usable without JavaScript. JavaScript only draws the decorative hero illustration. Reduced motion preferences are respected. Model metrics come from the owner-provided August 2026 resume. The NBA card displays an owner-supplied prediction screenshot; the project details link to the supplied model comparison image. The audio card displays a real local dashboard capture analyzing piano_test.wav.
 
 ## Content provenance
 
@@ -48,4 +48,8 @@ The owner-provided August 2026 resume is the source of truth for internship titl
 
 ## Project imagery
 
-`src/portfolio/static/images/nba-feature-importance.png` is the unmodified [XGBoost permutation importance plot](https://github.com/jacklav24/NBA-Player-Points-Predictor/blob/main/player_prediction_app/backend/plots/xgb_perm_importance.png) from the owner’s repository. The card links to the original. Selected work uses no invented data illustrations. Audio Pitch Core currently uses a text overview of its documented architecture; replace it with an actual project screenshot when available.
+- `nba-prediction.png`: owner-supplied Jaylen Brown prediction screenshot, displayed in the featured project card.
+- `nba-model-comparison.png`: owner-supplied evaluation screenshot, linked from the expanded project details.
+- `audio-pitch-dashboard.png`: captured from the existing local Audio Pitch Core application analyzing `piano_test.wav`, showing actual pitch and confidence outputs. The CSS frame excludes excess screenshot canvas.
+
+Selected work uses actual project imagery, without invented charts or redrawn results. The original NBA feature-importance graphic has been removed.
